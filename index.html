@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jordan — Solutions Architecttt</title>
+  <meta name="description" content="Jordan — Solutions Architect | Cloud architecture, security, and delivery on AWS." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">J</div>
+        <div>
+          <div class="name">Jordan</div>
+          <div class="role">Solutions Architect</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#certs">Certs</a>
+        <a href="#contact" class="btn btn-sm">Contact</a>
+      </nav>
+
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false" data-menu>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" data-mobile-nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#certs">Certs</a>
+      <a href="#contact" class="btn">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="badge">AWS • Security • Architecture • Delivery</p>
+          <h1>Designing reliable cloud systems that scale.</h1>
+          <p class="lead">
+            I’m Jordan, a Solutions Architect focused on AWS, security-first design,
+            cost optimization, and shipping production-ready platforms.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn" href="#projects">View projects</a>
+            <a class="btn btn-ghost" href="#contact">Let’s talk</a>
+          </div>
+
+          <div class="quick-stats" role="list">
+            <div class="stat" role="listitem">
+              <div class="stat-top">8+ yrs</div>
+              <div class="stat-bottom">Cloud delivery</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="stat-top">AWS</div>
+              <div class="stat-bottom">Well-Architected</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="stat-top">IaC</div>
+              <div class="stat-bottom">Terraform/CDK</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Highlights">
+          <h2>Highlights</h2>
+          <ul class="checklist">
+            <li>Reference architectures & landing zones</li>
+            <li>Identity, security, and compliance guardrails</li>
+            <li>CI/CD pipelines, automated testing & deploys</li>
+            <li>Observability: logs, metrics, traces, alerting</li>
+          </ul>
+
+          <div class="card-divider"></div>
+
+          <div class="pill-row" aria-label="Core skills">
+            <span class="pill">S3</span>
+            <span class="pill">CloudFront</span>
+            <span class="pill">IAM</span>
+            <span class="pill">VPC</span>
+            <span class="pill">ECS/EKS</span>
+            <span class="pill">RDS</span>
+            <span class="pill">Lambda</span>
+            <span class="pill">WAF</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>About</h2>
+          <p>
+            I partner with teams to design secure, resilient architectures and build
+            delivery pipelines that keep releases safe and fast. I’m comfortable across
+            discovery, architecture, implementation, and operational excellence.
+          </p>
+          <p class="muted">
+            Areas I care about: least-privilege IAM, cost controls, multi-account design,
+            disaster recovery, and measurable SLOs.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>What you can expect</h3>
+          <ul class="bullets">
+            <li>Clear diagrams & documented decisions</li>
+            <li>Secure-by-default patterns</li>
+            <li>Realistic cost estimates & tradeoffs</li>
+            <li>Handover-ready runbooks</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="muted">A few representative builds (swap these for your real ones).</p>
+        </div>
+
+        <div class="grid cards-3">
+          <article class="project card">
+            <div class="project-top">
+              <h3>Secure Static Site Platform</h3>
+              <span class="tag">S3 + CloudFront + WAF</span>
+            </div>
+            <p>
+              Hardened static hosting with HTTPS, caching, WAF rules, and CI/CD deployments.
+            </p>
+            <ul class="mini">
+              <li>OAC / private S3 origin</li>
+              <li>Automated cache invalidations</li>
+              <li>Security headers</li>
+            </ul>
+          </article>
+
+          <article class="project card">
+            <div class="project-top">
+              <h3>Multi-Account Landing Zone</h3>
+              <span class="tag">Organizations</span>
+            </div>
+            <p>
+              Baseline accounts, guardrails, IAM identity strategy, and centralized logging.
+            </p>
+            <ul class="mini">
+              <li>Control Tower patterns</li>
+              <li>CloudTrail + Config</li>
+              <li>Central log archive</li>
+            </ul>
+          </article>
+
+          <article class="project card">
+            <div class="project-top">
+              <h3>Event-Driven Ingestion</h3>
+              <span class="tag">SQS + Lambda</span>
+            </div>
+            <p>
+              Reliable pipeline for ingestion, validation, retries, and observability.
+            </p>
+            <ul class="mini">
+              <li>DLQs + alarms</li>
+              <li>Idempotency</li>
+              <li>Structured logging</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Services</h2>
+          <p class="muted">Engagements I commonly support.</p>
+        </div>
+
+        <div class="grid cards-3">
+          <div class="card">
+            <h3>Architecture & Reviews</h3>
+            <p>Well-Architected reviews, threat modeling, and reference designs.</p>
+          </div>
+          <div class="card">
+            <h3>Security & IAM</h3>
+            <p>Least privilege, guardrails, auditing, and incident-ready setup.</p>
+          </div>
+          <div class="card">
+            <h3>CI/CD & Delivery</h3>
+            <p>GitHub Actions pipelines, testing, and safe deploy strategies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certs" class="section alt">
+      <div class="container two-col">
+        <div>
+          <h2>Certifications</h2>
+          <p class="muted">Replace with your real certs and dates.</p>
+          <div class="grid cards-2">
+            <div class="card">
+              <h3>AWS Certified Solutions Architect</h3>
+              <p class="muted">Professional / Associate</p>
+            </div>
+            <div class="card">
+              <h3>Security Specialty</h3>
+              <p class="muted">Identity, encryption, monitoring</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Toolkit</h3>
+          <div class="pill-row">
+            <span class="pill">Terraform</span>
+            <span class="pill">CDK</span>
+            <span class="pill">GitHub Actions</span>
+            <span class="pill">CloudWatch</span>
+            <span class="pill">OpenTelemetry</span>
+            <span class="pill">WAF</span>
+            <span class="pill">KMS</span>
+            <span class="pill">Route 53</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact">
+        <div>
+          <h2>Contact</h2>
+          <p class="muted">
+            Want an architecture review, a CI/CD buildout, or help shipping an AWS workload?
+          </p>
+
+          <div class="contact-card card">
+            <div class="contact-row">
+              <span class="label">Email</span>
+              <a href="mailto:jordan@example.com">jordan@example.com</a>
+            </div>
+            <div class="contact-row">
+              <span class="label">LinkedIn</span>
+              <a href="#" aria-label="LinkedIn profile">linkedin.com/in/jordan</a>
+            </div>
+            <div class="contact-row">
+              <span class="label">GitHub</span>
+              <a href="#" aria-label="GitHub profile">github.com/jordan</a>
+            </div>
+          </div>
+
+          <p class="fineprint">
+            © <span id="year"></span> Jordan. Built with HTML/CSS/JS. Deployed to AWS S3 via GitHub Actions.
+          </p>
+        </div>
+
+        <form class="card form" onsubmit="return window.JordanSite.handleContact(event)">
+          <h3>Quick message</h3>
+          <label>
+            Name
+            <input required name="name" placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input required type="email" name="email" placeholder="you@company.com" />
+          </label>
+          <label>
+            Message
+            <textarea required name="message" rows="5" placeholder="Tell me what you're building…"></textarea>
+          </label>
+          <button class="btn" type="submit">Send</button>
+          <p class="muted small" id="formStatus" aria-live="polite"></p>
+          <p class="muted small">
+    
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="muted">Built for fast performance and clean, accessible UX.</span>
+      <a href="#main" class="muted">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
